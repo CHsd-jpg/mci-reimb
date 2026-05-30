@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCI 浼佷笟鎶ラ攢绠＄悊绯荤粺</title>
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="app">
+
+<!-- ========== 鏈櫥褰曡鍥?========== -->
+<div id="guest-view">
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo"><span class="logo-em">馃搵</span><h1>MCI 鎶ラ攢绯荤粺</h1></div>
+      <nav class="nav-links" id="guest-nav">
+        <a href="#" class="nv active" data-g="home">棣栭〉</a>
+        <a href="#" class="nv" data-g="framework">鏉冮檺妗嗘灦</a>
+        <a href="#" class="nv" data-g="categories">鎶ラ攢鍒嗙被</a>
+        <a href="#" class="nv" data-g="apply-account">鐢宠璐﹀彿</a>
+        <button class="btn btn-p" onclick="openLogin()">鐧诲綍</button>
+      </nav>
+      <button class="hamburger" onclick="toggleGuestNav()">鈽?/button>
+    </div>
+  </header>
+
+  <main class="g-main">
+    <section class="g-page active" id="g-home">
+      <div class="hero">
+        <h2>浼佷笟鎶ラ攢鏁板瓧鍖栫鐞嗗钩鍙?/h2>
+        <p class="hero-sub">澶氭潈闄愬眰绾?路 绮剧粏鍖栧垎绫?路 鍏ㄦ祦绋嬪鎵?路 鏅鸿兘閫氱煡</p>
+        <div class="hero-grid">
+          <div class="hc"><span class="hci">馃攼</span><h3>澶氱骇鏉冮檺</h3><p>Admin鈫掕€佹澘鈫掕储鍔♀啋缁忕悊鈫掑憳宸ワ紝鍒嗗眰绠＄悊</p></div>
+          <div class="hc"><span class="hci">馃搨</span><h3>绮剧粏鍒嗙被</h3><p>鍏姟/绉佷汉/鍏朵粬 + 缁嗗垎鐢ㄩ€斿娉?/p></div>
+          <div class="hc"><span class="hci">馃搳</span><h3>鏁版嵁鎬昏</h3><p>瀹炴椂缁熻锛屽缁村垎鏋愶紝CSV瀵煎嚭</p></div>
+          <div class="hc"><span class="hci">馃敂</span><h3>鏅鸿兘閫氱煡</h3><p>鎿嶄綔鍙樻洿鍗虫椂閫氱煡鑰佹澘</p></div>
+        </div>
+        <div class="demo-hint">
+          <p>馃挕 鐐瑰嚮鍙充笂瑙?<strong>鐧诲綍</strong> 璇曠敤</p>
+          <div class="demo-cred">Admin: admin / admin888 | Boss: boss / boss123</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="g-page" id="g-framework">
+      <div class="card"><h2>馃攼 绯荤粺鏉冮檺妗嗘灦</h2><p class="muted">涓嶅悓鏉冮檺鍙鏁版嵁鍜屾搷浣滆寖鍥翠笉鍚?/p>
+      <div class="fw-grid">
+        <div class="fw l0"><div class="lvl">Lv.0</div><h4>瓒呯骇绠＄悊鍛?/h4><p>鏈€楂樻潈闄?/p><ul><li>鍒涘缓/鍒犻櫎璐﹀彿</li><li>鏌ョ湅鎵€鏈夋暟鎹?/li><li>瀹¤鏃ュ織</li><li>瀹℃牳璐﹀彿鐢宠</li></ul></div>
+        <div class="fw l1"><div class="lvl">Lv.1</div><h4>鑰佹澘</h4><p>鍏ㄥ眬瑙嗚</p><ul><li>鏌ョ湅鎵€鏈夋姤閿€</li><li>绯荤粺鍙樺姩閫氱煡</li><li>瀹℃壒鎿嶄綔</li><li>鏁版嵁鎬昏鎶ヨ〃</li></ul></div>
+        <div class="fw l2"><div class="lvl">Lv.2</div><h4>璐㈠姟</h4><ul><li>鎶ラ攢瀹℃壒澶勭悊</li><li>璐㈠姟鏁版嵁鏌ョ湅</li><li>鍒嗙被缁熻</li></ul></div>
+        <div class="fw l3"><div class="lvl">Lv.3</div><h4>缁忕悊</h4><ul><li>瀹℃壒涓嬪睘鎶ラ攢</li><li>鍥㈤槦鏁版嵁鏌ョ湅</li></ul></div>
+        <div class="fw l4"><div class="lvl">Lv.4</div><h4>鍛樺伐</h4><ul><li>鎻愪氦鎶ラ攢鐢宠</li><li>鏌ョ湅涓汉璁板綍</li><li>瀹℃壒杩涘害</li></ul></div>
+        <div class="fw l99"><div class="lvl">Lv.99</div><h4>鏈敞鍐岃瀹?/h4><ul><li>鏌ョ湅绯荤粺妗嗘灦</li><li>璐﹀彿鐢宠</li><li class="no">鉂?鏃犳硶鏌ョ湅鏁版嵁</li></ul></div>
+      </div></div>
+    </section>
+
+    <section class="g-page" id="g-categories">
+      <div class="card"><h2>馃搨 鎶ラ攢鍒嗙被浣撶郴</h2><p class="muted">鐧诲綍鍚庡彲鎻愪氦瀹屾暣鎶ラ攢鐢宠</p>
+      <div class="cat-grid">
+        <div class="catc"><h3>馃搵 鍏姟鎶ラ攢</h3>
+          <div class="tags"><span>宸梾璐?/span><span>鍔炲叕鐢ㄥ搧</span><span>涓氬姟鎷涘緟璐?/span><span>閫氳璐?/span><span>浜ら€氳垂</span><span>浼氳璐?/span><span>鍩硅璐?/span><span>鍏朵粬鍏姟璐?/span></div></div>
+        <div class="catc"><h3>馃彔 绉佷汉鎶ラ攢</h3>
+          <div class="tags"><span>鍖荤枟璐圭敤</span><span>鏁欒偛鍩硅</span><span>瀹跺涵寮€鏀?/span><span>浜ら€氳垂鐢?/span><span>閫氳璐圭敤</span><span>鍏朵粬绉佷汉璐?/span></div></div>
+        <div class="catc"><h3>馃搶 鍏朵粬鎶ラ攢</h3>
+          <div class="tags"><span>椤圭洰缁忚垂</span><span>娲诲姩缁忚垂</span><span>搴旀€ユ敮鍑?/span><span>鎹愯禒</span><span>鍏朵粬</span></div></div>
+        <div class="catc note-cat"><h3>馃摑 绗笁绫伙細澶囨敞缁嗗垎鐢ㄩ€?/h3><p class="muted">姣忛」鎶ラ攢鍙檮鍔犲娉ㄦ爣绛?/p>
+          <div class="tags nt"><span>宸梾_鏈虹エ</span><span>宸梾_閰掑簵</span><span>鍔炲叕_璁惧</span><span>鍔炲叕_杞欢</span><span>鎷涘緟_椁愰ギ</span><span>浜ら€歘鍑虹杞?/span><span>鍖荤枟_闂ㄨ瘖</span><span>鏁欒偛_璇剧▼</span><span>椤圭洰_鏉愭枡</span></div></div>
+      </div></div>
+    </section>
+
+    <section class="g-page" id="g-apply-account">
+      <div class="card" style="max-width:500px"><h2>馃搵 鐢宠绯荤粺璐﹀彿</h2>
+        <form id="apply-form" onsubmit="submitApply(event)">
+          <div class="fg"><label>濮撳悕 *</label><input type="text" name="name" required></div>
+          <div class="fg"><label>閭 *</label><input type="email" name="email" required></div>
+          <div class="fg"><label>鎵嬫満鍙?/label><input type="tel" name="phone"></div>
+          <div class="fg"><label>鐢宠鐞嗙敱 *</label><textarea name="reason" rows="3" required></textarea></div>
+          <button type="submit" class="btn btn-p btn-block">鎻愪氦鐢宠</button>
+        </form>
+        <div id="apply-msg" class="msg" style="display:none"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ========== 鐧诲綍寮圭獥 ========== -->
+<div id="login-modal" class="modal" style="display:none">
+  <div class="modal-box">
+    <span class="close" onclick="closeLogin()">&times;</span>
+    <h2>鐧诲綍绯荤粺</h2>
+    <form id="login-form" onsubmit="handleLogin(event)">
+      <div class="fg"><label>鐢ㄦ埛鍚?/label><input type="text" name="username" required autofocus></div>
+      <div class="fg"><label>瀵嗙爜</label><input type="password" name="password" required></div>
+      <button type="submit" class="btn btn-p btn-block">鐧诲綍</button>
+    </form>
+    <div id="login-err" class="msg err" style="display:none"></div>
+    <hr>
+    <div class="demo-accts"><p><strong>可用账号：</strong></p><span onclick="fillLogin('YK')">YK（老板）</span><span onclick="fillLogin('翁琳')">翁琳（财务）</span><span onclick="fillLogin('大白白')">大白白（员工）</span></div>
+  </div>
+</div>
+
+<!-- ========== 宸茬櫥褰曡鍥?========== -->
+<div id="auth-view" style="display:none">
+  <header class="header dash-head">
+    <div class="header-inner">
+      <div class="logo"><span class="logo-em">馃搵</span><h1>MCI 鎶ラ攢</h1></div>
+      <div class="user-bar">
+        <div class="notif-bell" onclick="showNotifications()">
+          馃敂<span id="notif-count" class="notif-num" style="display:none">0</span>
+        </div>
+        <span class="badge-circle" id="user-avatar">U</span>
+        <span id="user-name" class="user-label"></span>
+        <span id="user-role-badge" class="role-tag"></span>
+        <button class="btn btn-sm btn-outline" onclick="handleLogout()">閫€鍑?/button>
+      </div>
+      <button class="hamburger" onclick="toggleSidebar()">鈽?/button>
+    </div>
+  </header>
+
+  <div class="dash-layout">
+    <aside class="sidebar" id="sidebar">
+      <nav class="side-nav">
+        <a href="#" class="sl active" data-d="home">馃搳 鎬昏</a>
+        <a href="#" class="sl" data-d="reimb-new" id="nav-new">鉃?鏂板缓鎶ラ攢</a>
+        <a href="#" class="sl" data-d="reimb-list">馃摑 鎶ラ攢鍒楄〃</a>
+        <a href="#" class="sl" data-d="my-reimb">馃搫 鎴戠殑鎶ラ攢</a>
+        <a href="#" class="sl" data-d="stats">馃搱 鏁版嵁缁熻</a>
+        <a href="#" class="sl hide-l3" id="nav-accts" data-d="accounts">馃懃 璐﹀彿绠＄悊</a>
+        <a href="#" class="sl hide-l3" id="nav-apps" data-d="applications">馃搵 鐢宠瀹℃牳</a>
+        <a href="#" class="sl hide-l1" id="nav-monitor" data-d="monitor">馃攳 绯荤粺鐩戞帶</a>
+        <a href="#" class="sl" data-d="profile">馃懁 涓汉淇℃伅</a>
+      </nav>
+    </aside>
+
+    <main class="dash-main" id="dash-main">
+      <!-- 鎬昏 -->
+      <section class="dash active" id="d-home">
+        <h2>馃搳 绯荤粺鎬昏</h2>
+        <div class="stats" id="stat-grid">
+          <div class="sc"><div class="sn" id="st-total">-</div><div class="slb">鎬婚噾棰?/div></div>
+          <div class="sc"><div class="sn" id="st-pending">-</div><div class="slb">寰呭鎵?/div></div>
+          <div class="sc"><div class="sn" id="st-approved">-</div><div class="slb">宸查€氳繃</div></div>
+          <div class="sc"><div class="sn" id="st-rejected">-</div><div class="slb">宸查┏鍥?/div></div>
+        </div>
+        <div class="card"><h3>鏈€杩戝姩鎬?/h3><div id="activity-feed"><p class="muted">鍔犺浇涓?..</p></div></div>
+      </section>
+
+      <!-- 鏂板缓鎶ラ攢 -->
+      <section class="dash" id="d-reimb-new">
+        <h2>鉃?鏂板缓鎶ラ攢鐢宠</h2>
+        <div class="card" style="max-width:600px">
+          <form id="reimb-form" onsubmit="submitReimb(event)">
+            <div class="fg"><label>鎶ラ攢澶х被 *</label>
+              <select name="cat_main" required onchange="updateSubCats(this.value)">
+                <option value="">璇烽€夋嫨</option>
+                <option value="鍏姟">鍏姟鎶ラ攢</option>
+                <option value="绉佷汉">绉佷汉鎶ラ攢</option>
+                <option value="鍏朵粬">鍏朵粬鎶ラ攢</option>
+              </select></div>
+            <div class="fg"><label>鎶ラ攢缁嗙被 *</label>
+              <select name="cat_sub" required><option value="">璇峰厛閫夋嫨澶х被</option></select></div>
+            <div class="fg"><label>澶囨敞缁嗗垎鐢ㄩ€旓紙绗笁绫伙級</label>
+              <select name="cat_note"><option value="">鏃?/option></select></div>
+            <div class="fg"><label>閲戦 (鍏? *</label>
+              <input type="number" name="amount" required min="0.01" step="0.01" placeholder="0.00"></div>
+            <div class="fg"><label>璐у竵</label>
+              <select name="currency"><option value="CNY">楼 CNY</option><option value="USD">$ USD</option></select></div>
+            <div class="fg"><label>鎶ラ攢璇存槑</label>
+              <textarea name="description" rows="3" placeholder="璇疯缁嗘弿杩版姤閿€浜嬬敱..."></textarea></div>
+            <div class="fg"><label>涓婁紶鍑瘉锛堝浘鐗囷級</label>
+              <input type="file" name="receipt" accept="image/*" onchange="previewReceipt(this)"></div>
+            <div id="receipt-preview" style="display:none;margin-bottom:12px">
+              <img id="receipt-img" style="max-width:200px;border-radius:4px">
+              <button type="button" class="btn btn-sm btn-outline" onclick="clearReceipt()">娓呴櫎</button>
+            </div>
+            <button type="submit" class="btn btn-p btn-block">鎻愪氦鎶ラ攢</button>
+          </form>
+          <div id="reimb-msg" class="msg" style="display:none"></div>
+        </div>
+      </section>
+
+      <!-- 鎶ラ攢鍒楄〃 -->
+      <section class="dash" id="d-reimb-list">
+        <h2>馃摑 鎶ラ攢鍒楄〃</h2>
+        <div class="toolbar">
+          <input type="text" id="rl-search" placeholder="馃攳 鎼滅储鍗曞彿/璇存槑..." oninput="debounce(loadReimbList,300)">
+          <select id="rl-status" onchange="loadReimbList()"><option value="">鍏ㄩ儴鐘舵€?/option>
+            <option value="pending">寰呭鎵?/option><option value="approved">宸查€氳繃</option><option value="rejected">宸查┏鍥?/option></select>
+          <select id="rl-cat" onchange="loadReimbList()"><option value="">鍏ㄩ儴绫诲埆</option>
+            <option value="鍏姟">鍏姟</option><option value="绉佷汉">绉佷汉</option><option value="鍏朵粬">鍏朵粬</option></select>
+          <button class="btn btn-sm btn-outline" onclick="exportCSV()">馃摜 瀵煎嚭CSV</button>
+        </div>
+        <div class="card"><div style="overflow-x:auto"><table class="dt"><thead><tr>
+          <th>鍗曞彿</th><th>鐢宠浜?/th><th>鍒嗙被</th><th>閲戦</th><th>鐘舵€?/th><th>鏃堕棿</th><th>鎿嶄綔</th>
+        </tr></thead><tbody id="rl-tbody"><tr><td colspan="7" class="muted">鍔犺浇涓?..</td></tr></tbody></table></div>
+        <div class="pagination" id="rl-pages"></div></div>
+      </section>
+
+      <!-- 鎴戠殑鎶ラ攢 -->
+      <section class="dash" id="d-my-reimb">
+        <h2>馃搫 鎴戠殑鎶ラ攢</h2>
+        <div class="card"><div style="overflow-x:auto"><table class="dt"><thead><tr>
+          <th>鍗曞彿</th><th>澶х被</th><th>缁嗙被</th><th>澶囨敞</th><th>閲戦</th><th>鐘舵€?/th><th>瀹℃壒浜?/th><th>鏃堕棿</th>
+        </tr></thead><tbody id="mr-tbody"><tr><td colspan="8" class="muted">鍔犺浇涓?..</td></tr></tbody></table></div></div>
+      </section>
+
+      <!-- 鏁版嵁缁熻 -->
+      <section class="dash" id="d-stats">
+        <h2>馃搱 鏁版嵁缁熻</h2>
+        <div class="stats" id="stats-grid">
+          <div class="sc"><div class="sn" id="st2-total">-</div><div class="slb">鎬昏閲戦</div></div>
+          <div class="sc"><div class="sn" id="st2-count">-</div><div class="slb">鎬荤瑪鏁?/div></div>
+          <div class="sc"><div class="sn" id="st2-avg">-</div><div class="slb">骞冲潎閲戦</div></div>
+        </div>
+        <div class="card"><h3>鎸夌被鍒粺璁?/h3><div id="cat-chart"></div></div>
+        <div class="card"><h3>鏈堝害瓒嬪娍</h3><div id="month-chart"></div></div>
+      </section>
+
+      <!-- 璐﹀彿绠＄悊 -->
+      <section class="dash" id="d-accounts">
+        <div class="dash-head-row"><h2>馃懃 璐﹀彿绠＄悊</h2>
+          <button class="btn btn-p" onclick="showCreateAcct()">+ 鍒涘缓璐﹀彿</button></div>
+        <div class="toolbar">
+          <input type="text" id="ac-search" placeholder="馃攳 鎼滅储鐢ㄦ埛鍚?濮撳悕..." oninput="debounce(loadAccounts,300)">
+          <select id="ac-status" onchange="loadAccounts()"><option value="">鍏ㄩ儴鐘舵€?/option>
+            <option value="active">姝ｅ父</option><option value="disabled">绂佺敤</option></select>
+        </div>
+        <div class="card"><div style="overflow-x:auto"><table class="dt"><thead><tr>
+          <th>璐﹀彿ID</th><th>鐢ㄦ埛鍚?/th><th>濮撳悕</th><th>鏉冮檺</th><th>瑙掕壊</th><th>鐘舵€?/th><th>鎿嶄綔</th>
+        </tr></thead><tbody id="ac-tbody"><tr><td colspan="7" class="muted">鍔犺浇涓?..</td></tr></tbody></table></div></div>
+      </section>
+
+      <!-- 鐢宠瀹℃牳 -->
+      <section class="dash" id="d-applications">
+        <h2>馃搵 璐﹀彿鐢宠瀹℃牳</h2>
+        <div class="card"><div style="overflow-x:auto"><table class="dt"><thead><tr>
+          <th>濮撳悕</th><th>閭</th><th>鐞嗙敱</th><th>鐘舵€?/th><th>鏃堕棿</th><th>鎿嶄綔</th>
+        </tr></thead><tbody id="ap-tbody"><tr><td colspan="6" class="muted">鍔犺浇涓?..</td></tr></tbody></table></div></div>
+      </section>
+
+      <!-- 绯荤粺鐩戞帶 -->
+      <section class="dash" id="d-monitor">
+        <h2>馃攳 绯荤粺鐩戞帶</h2>
+        <div class="stats" id="mon-stats">
+          <div class="sc"><div class="sn" id="m-accts">-</div><div class="slb">璐﹀彿鏁?/div></div>
+          <div class="sc"><div class="sn" id="m-active">-</div><div class="slb">娲昏穬</div></div>
+          <div class="sc"><div class="sn" id="m-pending-r">-</div><div class="slb">寰呮壒鎶ラ攢</div></div>
+          <div class="sc"><div class="sn" id="m-pending-a">-</div><div class="slb">寰呭鐢宠</div></div>
+        </div>
+        <div class="card"><h3>瀹¤鏃ュ織</h3>
+          <div class="toolbar"><input type="text" id="log-search" placeholder="馃攳 绛涢€夋搷浣滅被鍨?.." oninput="debounce(loadAuditLogs,300)"></div>
+          <div style="max-height:500px;overflow-y:auto;font-size:13px"><table class="dt"><thead><tr>
+            <th>鎿嶄綔</th><th>鎿嶄綔浜?/th><th>璇︽儏</th><th>鏃堕棿</th>
+          </tr></thead><tbody id="log-tbody"><tr><td colspan="4" class="muted">鍔犺浇涓?..</td></tr></tbody></table></div></div>
+      </section>
+
+      <!-- 涓汉淇℃伅 -->
+      <section class="dash" id="d-profile">
+        <h2>馃懁 涓汉淇℃伅</h2>
+        <div class="card" style="max-width:500px">
+          <div class="profile"><p><strong>璐﹀彿ID锛?/strong><code id="p-aid"></code></p>
+          <p><strong>鐢ㄦ埛鍚嶏細</strong><span id="p-un"></span></p>
+          <p><strong>濮撳悕锛?/strong><span id="p-dn"></span></p>
+          <p><strong>鏉冮檺绾у埆锛?/strong><span id="p-pl"></span></p>
+          <p><strong>瑙掕壊锛?/strong><span id="p-rl"></span></p>
+          <p><strong>宸ョ锛?/strong><span id="p-jt"></span></p>
+          <p><strong>鏉冮噸锛?/strong><span id="p-wt"></span></p>
+          <p><strong>鍒涘缓鏃堕棿锛?/strong><span id="p-ct"></span></p>
+          <hr style="margin:16px 0">
+          <h3>淇敼瀵嗙爜</h3>
+          <form id="pwd-form" onsubmit="changePassword(event)">
+            <div class="fg"><label>褰撳墠瀵嗙爜</label><input type="password" name="old_pwd" required></div>
+            <div class="fg"><label>鏂板瘑鐮?/label><input type="password" name="new_pwd" required minlength="6"></div>
+            <button type="submit" class="btn btn-p">纭淇敼</button>
+          </form>
+          <div id="pwd-msg" class="msg" style="display:none"></div>
+        </div></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- 閫氱敤寮圭獥 -->
+<div id="overlay" class="modal" style="display:none">
+  <div class="modal-box modal-lg" onclick="event.stopPropagation()">
+    <span class="close" onclick="closeOverlay()">&times;</span>
+    <div id="overlay-content"></div>
+  </div>
+</div>
+
+<!-- 閫氱煡闈㈡澘 -->
+<div id="notif-panel" class="notif-panel" style="display:none">
+  <div class="notif-head"><h3>閫氱煡</h3>
+    <button class="btn btn-sm btn-outline" onclick="markAllRead()">鍏ㄩ儴宸茶</button>
+    <span class="close" onclick="hideNotifications()">&times;</span>
+  </div>
+  <div id="notif-list" class="notif-body"><p class="muted">鏆傛棤閫氱煡</p></div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
+
+
